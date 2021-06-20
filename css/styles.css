@@ -1,0 +1,28 @@
+body {
+  background-color: aquamarine;
+  text-align: center;
+}
+
+h1 {
+  background-color:lightpink;
+  border: 3px dotted black;
+  margin: 100px;
+  padding: 20px;
+}
+
+p {
+  font-style: italic;
+  background-color: honeydew;
+  border: 2px dotted black;
+  margin: 20px;
+  padding: 20px;
+}
+
+#name {
+  background-color: thistle;
+  border: 2px dotted gray
+}
+ .form-control {
+   text-align: center;
+   background-color: honeydew;
+ }

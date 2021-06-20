@@ -25,7 +25,7 @@ This is my second major coding project at Epicodus and will likely serve to cont
 * Learn to use computer
 * Connect to internet
 * Open internet browser
-* Navigate to https://github.com/phantomcurve/Portfolio
+* Navigate to https://github.com/phantomcurve/coding-quiz
 * Click the green "Code" button
 * Select "Download ZIP"
 * Open and extract downloaded ZIP folder
