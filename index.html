@@ -10,62 +10,77 @@
 <body>
   <div class="container">
     <h1>Which coding language is right for me?</h1>
+
     <p>The following questions will attempt to elucidate enough 
-      about you and your personality to help you choose the best 
+      about you and your personality <br> to help you choose the best 
       coding language to learn first.</p>
-    <form id="name">
-      <div class="form-group">
-        <label for="name">Full name:</label>
-        <input id="name" class="form-control" type="text">
-      </div>
-    </form>
 
-     <form id="dob">
-      <div class="form-group">
-        <label for="dob">Month of Birth</label>
-        <select class="form-control" id="dob">
-          <option>January</option>
-          <option>February</option>
-          <option>March</option>
-          <option>April</option>
-          <option>May</option>
-          <option>June</option>
-          <option>July</option>
-          <option>August</option>
-          <option>September</option>
-          <option>October</option>
-          <option>November</option>
-          <option>December</option>
-        </select>
-      </div> 
-    </form>
+      <form id="codingquiz">
+        <div class="form-group">
+          <h2><label for="name">Full Name</label></h2>
+          <input id="inputtedName" class="form-control-lg" type="text">
+        </div>
+     
+        <div class="form-group">
+          <h2><label for="dob">Month of Birth</label></h2>
+          <select class="form-control-lg" id="dob">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+        </div> 
+        <h2><label for="favColor">Favorite Color</label></h2>
+        <div class="favColor">
+          <div class='box black'></div>
+          <label>
+            <input type="radio" name="favColor" value="Black" checked>
+            Black
+          </label>
+        </div>
+        <div class="favColor">
+          <div class='box coral'></div>
+          <label>
+            <input type="radio" name="favColor" value="Coral">
+            Coral
+          </label>
+        </div>
+        <div class="favColor">
+          <div class="box teal"></div>
+          <label>
+            <input type="radio" name="favColor" value="Teal">
+            Teal
+          </label>
+        </div>
 
-    <form id="favColor">
-      <div class="form-group">
-        <label for="favColor">What is your favorite color?</label>
-        <input id="favColor" class="form-control" type="color">
-      </div>
-    </form>
-
-    <button type="submit" class="btn">Submit</button>
-
-    <div id="output">
-
-    </div>
-
-    <div id="Ruby">
-
-    </div>
-
-    <div id="Python">
-
-    </div>
-
-    <div id="C#">
-
-    </div>
-
-    <div id="Javascript">
+  
+      </form>
+     
+      <button type="submit" class="btn"><strong>submit</strong></button>
       
-    </div>
+      <div id="Ruby">
+        <p>Congratulations <span id="inputtedName"></span>, your chosen language is Ruby!</p>
+      </div>
+  
+      <div id="Python">
+        <p>Congratulations <span id="inputtedName"></span>, your chosen language is Python!</p>
+      </div>
+  
+      <div id="CSharp">
+        <p>Congratulations <span id="inputtedName"></span>, your chosen language is C#!</p>
+      </div>
+  
+      <div id="Javascript">
+        <p>Congratulations <span id="inputtedName"></span>, your chosen language is Javascript!</p>
+      </div>
+
+  </div>
 </body>

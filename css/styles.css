@@ -1,13 +1,20 @@
 body {
-  background-color: aquamarine;
+  font-family:'Courier New', Courier, monospace;
+  background-image: radial-gradient(wheat, rgb(220, 220, 254));
   text-align: center;
 }
 
 h1 {
   background-color:lightpink;
   border: 3px dotted black;
-  margin: 100px;
+  margin: 75px;
   padding: 20px;
+}
+
+h2 {
+  background-color:rgb(122, 214, 221);
+  margin: 20px;
+  padding: 10px;
 }
 
 p {
@@ -18,11 +25,53 @@ p {
   padding: 20px;
 }
 
-#name {
-  background-color: thistle;
-  border: 2px dotted gray
+.form-control-lg {
+  text-align: center;
+  background-color: honeydew;
 }
- .form-control {
-   text-align: center;
-   background-color: honeydew;
- }
+
+.favColor {
+  width: 200px;
+  float: left;
+}
+
+.box {
+  margin: auto;
+  height: 20px;
+  width: 20px;
+}
+
+.black {
+  background-color: black;
+}
+
+.coral {
+  background-color: coral;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.btn {
+  background-color: white;
+  border: 2px solid thistle;
+  width: 200px;
+}
+ 
+#Ruby {
+  display: none;
+}
+
+#Python {
+  display: none;
+}
+
+#CSharp {
+  display: none;
+}
+
+#Javascript {
+  display: none;
+}
+

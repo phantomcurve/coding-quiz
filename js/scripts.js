@@ -1,13 +1,8 @@
 $(document).ready(function() {
-  $("form#name").submit(function(event) {
-    event.preventDefault();
-    const name = $("#name").val();
-    $("#output").text(name);
-  });
-  $("form#dob").submit(function(event) {
-    event.preventDefault();
-    const dob = $("#dob").val();
+  $("form#codingquiz").submit(function(event) {
 
+    const dob = $("select#dob").val();
+   
     if (dob === January || February || March) {
       $('#Ruby').show();
     
@@ -15,16 +10,15 @@ $(document).ready(function() {
       $('#Python').show();
 
     } else if (dob === July || August || September) {
-      $('#C#').show();
+      $('#CSharp').show();
 
-    } else (dob === October || November || December) {
-      $('Javascript').show();
-    }
-    
+    } else (dob === October || November || December) 
+      $('#Javascript').show();
+
+      event.preventDefault();
   });
-  
-  $("form#favColor").submit(function(event) {
-    event.preventDefault();
-    const favColor = $("#favColor").val();
+  jQuery(".btn").click(function() {
+    alert("made you look!");
   });
 });
+
