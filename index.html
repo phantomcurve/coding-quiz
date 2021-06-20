@@ -13,11 +13,12 @@
 
     <p>The following questions will attempt to elucidate enough 
       about you and your personality <br> to help you choose the best 
-      coding language to learn first.</p>
-
-      <form id="codingquiz">
+      coding language to learn first.
+    </p>
+    <div>
+      <form id="codingQuiz">
         <div class="form-group">
-          <h2><label for="name">Full Name</label></h2>
+          <h2><label for="inputtedName">Full Name</label></h2>
           <input id="inputtedName" class="form-control-lg" type="text">
         </div>
      
@@ -38,6 +39,7 @@
             <option>December</option>
           </select>
         </div> 
+
         <h2><label for="favColor">Favorite Color</label></h2>
         <div class="favColor">
           <div class='box black'></div>
@@ -61,26 +63,42 @@
           </label>
         </div>
 
+        <div class="form-group">
+          <h2><label for="subject">Favorite Study Subject</label></h2>
+          <select class="form-control-lg" id="subject">
+            <option>Science</option>
+            <option>Math</option>
+            <option>Art</option>
+            <option>Writing</option>
+          </select>
+
   
       </form>
+    </div>
      
-      <button type="submit" class="btn"><strong>submit</strong></button>
-      
+    <button type="submit" class="btn btn-block"><strong>submit</strong></button>
+    
+    <div id="output">
+    
+    </div>
+
+
       <div id="Ruby">
         <p>Congratulations <span id="inputtedName"></span>, your chosen language is Ruby!</p>
       </div>
-  
+
       <div id="Python">
         <p>Congratulations <span id="inputtedName"></span>, your chosen language is Python!</p>
       </div>
-  
+
       <div id="CSharp">
         <p>Congratulations <span id="inputtedName"></span>, your chosen language is C#!</p>
       </div>
-  
+
       <div id="Javascript">
         <p>Congratulations <span id="inputtedName"></span>, your chosen language is Javascript!</p>
       </div>
+    
 
   </div>
 </body>

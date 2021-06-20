@@ -30,11 +30,6 @@ p {
   background-color: honeydew;
 }
 
-.favColor {
-  width: 200px;
-  float: left;
-}
-
 .box {
   margin: auto;
   height: 20px;
@@ -53,7 +48,12 @@ p {
   background-color: teal;
 }
 
-.btn {
+.btn-block {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px; 
   background-color: white;
   border: 2px solid thistle;
   width: 200px;

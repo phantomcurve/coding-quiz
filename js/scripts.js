@@ -1,7 +1,10 @@
 $(document).ready(function() {
-  $("form#codingquiz").submit(function(event) {
-
+  $("form#codingQuiz").submit(function(event) {
+    const inputtedName = $("input#inputtedName").val();
     const dob = $("select#dob").val();
+    const favColor = $("input:radio[name=favColor]:checked").val()
+
+    $("#output").text(inputtedName);
    
     if (dob === January || February || March) {
       $('#Ruby').show();
@@ -14,11 +17,10 @@ $(document).ready(function() {
 
     } else (dob === October || November || December) 
       $('#Javascript').show();
-
+      
       event.preventDefault();
   });
-  jQuery(".btn").click(function() {
-    alert("made you look!");
-  });
 });
+
+
 
