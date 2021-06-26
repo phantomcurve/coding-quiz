@@ -1,24 +1,35 @@
+// Business Logic
+
+
+
+
+
+// UI Logic
+
 $(document).ready(function() {
+  $(".Ruby").hide();
+  $(".Python").hide();
+  $(".CSharp").hide();
+  $(".Javascript").hide();
   $("form#codingQuiz").submit(function(event) {
-    const inputtedName = $("input#inputtedName").val();
-    const dob = $("select#dob").val();
-    const favColor = $("input:radio[name=favColor]:checked").val()
+    event.preventDefault();
 
-    $("#output").text(inputtedName);
-   
-    if (dob === January || February || March) {
-      $('#Ruby').show();
-    
-    } else if (dob === April || May || June) {
-      $('#Python').show();
+    const inputtedName = $("#inputtedName").val(inputtedName);
+    const birthMonth = $("#months").val(birthMonth);
 
-    } else if (dob === July || August || September) {
-      $('#CSharp').show();
+    $("#inputtedName").text();
 
-    } else (dob === October || November || December) 
-      $('#Javascript').show();
-      
-      event.preventDefault();
+    if (chosenMonth === "January" || chosenMonth === "February" || chosenMonth === "March" ) {
+      $(".Ruby").show();
+  
+    } else if (chosenMonth === 3 || chosenMonth === 4 || chosenMonth === 5) {
+      $(".Python").show();
+
+    } else if (chosenMonth === 6 || chosenMonth === 7 || chosenMonth === 8) {
+      $(".CSharp").show();
+
+    } else if (chosenMonth === 9 || chosenMonth === 10 || chosenMonth === 11) 
+      $(".Javascript").show();
   });
 });
 
