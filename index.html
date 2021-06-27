@@ -18,13 +18,13 @@
     <div class="container">
       <form id="codingQuiz">
         <div class="form-group">
-          <h2><label for="inputtedName">Full Name</label></h2>
-          <input class="form-control-lg" type="text" id="inputtedName" name="inputtedName" required>
+          <h2><label for="userName">Full Name</label></h2>
+          <input required class="form-control-lg" type="text" id="userName" name="userName" >
         </div>
      
         <div class="form-group">
           <h2><label for="months">Month of Birth</label></h2>
-          <select class="form-control-lg" input type="text" id="months" name="months" required>
+          <select class="form-control-lg" input type="text" id="months" name="months">
             <option>January</option>
             <option>February</option>
             <option>March</option>
@@ -44,7 +44,7 @@
         <div class="favColor">
           <div class='box black'></div>
           <label>
-            <input type="radio" name="favColor" value="Black" checked required>
+            <input type="radio" name="favColor" value="Black" checked>
             Black
           </label>
         </div>
@@ -65,7 +65,7 @@
 
         <div class="form-group">
           <h2><label for="subject">Favorite Study Subject</label></h2>
-          <select class="form-control-lg" id="subject" name="subject" required>
+          <select  class="form-control-lg" id="subject" name="subject">
             <option>Science</option>
             <option>Math</option>
             <option>Art</option>
@@ -74,32 +74,34 @@
 
         <div class="form-group">
           <h2><label for="dreamVacation">Dream Vacation Destination</label></h2>
-          <input class="form-control-lg" type="text" id="dreamVacation" name="dreamVacation" required>
+          <input required class="form-control-lg" type="text" id="dreamVacation" name="dreamVacation">
         </div>
 
   
-      </form>
+      
     </div>
      
     <button type="submit" class="btn btn-block"><strong><span style="color:black" class="animated pulse animatespan">submit</span></strong></button>
+    
+    </form>
     
     <div id="output">
 
 
       <div class="Ruby">
-        <p>Congratulations <span id="inputtedName"></span>, your chosen language is Ruby!</p>
+        <p>Congratulations, your chosen language is Ruby!</p>
       </div>
 
       <div class="Python">
-        <p>Congratulations <span id="inputtedName"></span>, your chosen language is Python!</p>
+        <p>Congratulations, your chosen language is Python!</p>
       </div>
 
       <div class="CSharp">
-        <p>Congratulations <span id="inputtedName"></span>, your chosen language is C#!</p>
+        <p>Congratulations, your chosen language is C#!</p>
       </div>
 
       <div class="Javascript">
-        <p>Congratulations <span id="inputtedName"></span>, your chosen language is Javascript!</p>
+        <p>Congratulations, your chosen language is Javascript!</p>
       </div>
     
     </div>
