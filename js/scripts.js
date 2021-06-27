@@ -13,25 +13,19 @@ $(document).ready(function() {
   $(".Javascript").hide();
   $("form#codingQuiz").submit(function(event) {
     event.preventDefault();
-
-    const inputtedName = $("#inputtedName").val(inputtedName);
-    const birthMonth = $("#months").val(birthMonth);
-
-    $("#inputtedName").text();
-
-    if (chosenMonth === "January" || chosenMonth === "February" || chosenMonth === "March" ) {
+    
+    const months = $("#months").val();
+    
+      if (months === 'January' || months === 'February' || months === 'March' ) {
       $(".Ruby").show();
   
-    } else if (chosenMonth === 3 || chosenMonth === 4 || chosenMonth === 5) {
+    } else if (months === 'April' || months === 'May' || months === 'June') {
       $(".Python").show();
 
-    } else if (chosenMonth === 6 || chosenMonth === 7 || chosenMonth === 8) {
+    } else if (months === 'July' || months === 'August' || months === 'September') {
       $(".CSharp").show();
 
-    } else if (chosenMonth === 9 || chosenMonth === 10 || chosenMonth === 11) 
+    } else if (months === 'October' || months === 'November' || months === 'December') {
       $(".Javascript").show();
+    }}); 
   });
-});
-
-
-
