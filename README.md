@@ -17,7 +17,7 @@
 
 ## Description
 
-This is my second major coding project at Epicodus and will likely serve to continue to embarass me in the future and hopefully show that I have progressed slightly since learning the basics of HTML and CSS, with the added fun of Javascript and jQuery.
+This is my second major coding project at Epicodus and will likely serve to continue to embarrass me in the future and hopefully show that I have progressed slightly since learning the basics of HTML and CSS, with the added fun of Javascript and jQuery.
 
 ## How to download to view!
 
